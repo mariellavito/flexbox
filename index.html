@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <title>Mari: Flexbox</title>
+</head>
+<body>
+    <header id="navegacao">
+        <div id="logo">
+            <img src="imagens/header/logo-mari.png" onmouseover="this.src='imagens/header/logo-mari-2.png'" onmouseout="this.src='imagens/header/logo-mari.png'" alt="Mariella Vito">
+            <h1>Mariella Vito</h1>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="">SOBRE</a></li>
+                <li><a href="https://github.com/mariellavito" target="_blank">REPOSITÓRIOS</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <div class="imagem__banner">
+            <img src="imagens/banner/flexbox-mariella-vito.png.png" onmouseover="this.src='imagens/banner/flexbox-2-mariella-vito.png.png'" onmouseout="this.src='imagens/banner/flexbox-mariella-vito.png.png'" alt="Mariella Vito">
+        </div>
+        <div class="conteudo__banner">
+            <h1> Flexbox </h1>
+            <h2> Estudo e exercícios</h2>
+            <p> Para quem esta começando no mundo da programação - <em>como eu</em>, aprender flexbox é ser essencial. </p>
+            <p>Nesta página reuni alguns exercícios que realizei durante o aprendizado e conteúdos que julgo interessantes e importantes. </p>
+            <p>É só deixar o scrol rolar ...</p>
+            
+        </div>
+    </section>
+
+    <main>
+
+         <section id="exercicios">
+            <h1>Exercícios</h1>
+            <h2> Do clássico ao site completo. <br> Diversos exercícios realizados utilizando a <br> propriedade Flexbox. </h2> 
+                <div class="lista__exercicios">
+                    <article>
+                    <img src="imagens/exercicios/icone-flexbox.gif" alt="ícone que retrara o movimento de uma página construida em flexbox" class="icones_exercicios"/>     
+                    <h1>DIVs Coloridas</h1>
+                    <h2>O famoso exercícios dos quadradinhos</h2>
+                    <p>Todo mundo, quando esta aprendendo HTML e CSS, já viu ou fez o famoso exercícios das DIVS coloridas.</p>
+                    <p>Mas muito antes do Flexbox, as  DIVS me ajudarem a entender muitos outros conceitos.</p>
+                    <p class="exercicios__botao"><a href="divscoloridas.html">Confira o resultado.</a> </p>
+                    </article>
+                    
+                    <article>
+                        <img src="imagens/exercicios/icone-login.gif" alt="" class="icones_exercicios">
+                        <h1>Página de Login</h1>
+                        <h2>O famoso exercícios dos quadradinhos</h2>
+                        <p>Todo mundo, quando esta aprendendo HTML e CSS, já viu ou fez o famoso exercícios das DIVS coloridas.</p>
+                        <p>Mas muito antes do Flexbox, as  DIVS me ajudarem a entender muitos outros conceitos.</p>
+                        <p class="exercicios__botao">Confira o resultado. </p>
+                    </article>
+                    
+                    <article>
+                        <img src="imagens/exercicios/icone-site.gif" alt="" class="icones_exercicios">
+                        <h1>Site Completo</h1>
+                        <h2>O famoso exercícios dos quadradinhos</h2>
+                        <p>Todo mundo, quando esta aprendendo HTML e CSS, já viu ou fez o famoso exercícios das DIVS coloridas.</p>
+                        <p>Mas muito antes do Flexbox, as  DIVS me ajudarem a entender muitos outros conceitos.</p>
+                        <p class="exercicios__botao">Confira o resultado. </p>
+                    </article>
+                </div>
+                <hr>
+        </section>
+       
+        <section id="conceito__flexbox">
+
+            <div>
+                <div class="conceito__flexbox__txt">
+                    <h1>O que é Flexbox</h1>
+                    <h2>Conceito e Lins Úteis</h2>
+                    <p>O Flexible Box Module, geralmente chamado de flexbox, foi projetado tanto como um modelo de layout unidimensional quanto como um método capaz de organizar espacialmente os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.</p>
+                    <p><cite><a href="https://pt.wikipedia.org/wiki/CSS_Flexible_Box_Layout" target="_blank">- MDN Web Docs</a></cite></p>
+                    <button><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">Veja o conteúdo completo</a> </button>
+                </div>
+
+                <hr>
+
+                <div class="links__uteis">
+
+                    <div class="lista__links__uteis">
+                        <h3>CSS Tricks</h3>
+                        <p>A minha maior referência em dicas e conceitos sobre CSS</p>
+                        <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Vale a pena conferir > </a></p>
+                    </div>
+
+                    <div class="lista__links__uteis">
+                        <h3>Kevin Powell</h3>
+                        <p>O cara do CSS. Ainda bem que o youtube tem opções de velocidade, porque ele fala muuuito rápido.</p>
+                        <p><a href="https://www.youtube.com/kepowob" target="_blank">Dá uma olhada > </a></p>
+                    </div>
+
+                    <div class="lista__links__uteis">
+                        <h3>W3Schools</h3>
+                        <p>O site clássico dos clássicos. Não tem como estudar programação, sem fazer pelo menos uma consulta nele.</p>
+                        <p><a href="https://www.youtube.com/kepowob" target="_blank">Salve nos favoritos > </a></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <img src="imagens/conceito/ilustracao-montagem-site-mariella-vito.jpg" alt="Ilustração que ilustra personagens montando um site">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Mariella Vito | <a href="https://lordicon.com/">Animated icons by Lordicon.com</a></p>
+    </footer>
+
+    
+</body>
+</html>

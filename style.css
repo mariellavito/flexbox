@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;500;700&family=Lora:ital,wght@1,400;1,500;1,700&display=swap');
+
+/* 
+font-family: 'Lora', serif; 
+font-family: 'Hind Madurai', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --rosa: #FF7D7D;
+    --verde: #A8CF45;
+    --amarelo: #F4DD7D;
+}
+
+body {
+    font: normal 1em 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Lora', serif; 
+}
+
+p {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+header {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+header > #logo {
+    display: flex;
+    align-items: center;
+}
+
+header > div > h1 {
+    font: bold 2.5em 'WindSong', 'Montserrat';
+    padding-left: 20px;
+    }
+
+header > div > h1:hover {
+    text-shadow: 2px 2px 2px lightgray;
+}
+
+header > #menu > ul > li {
+    display: inline;
+    padding: 1em;
+}
+
+header > #menu > ul > li:hover {
+      border-bottom: 5px solid var(--rosa);
+
+} 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+#banner {
+    display: flex;
+    background-image: linear-gradient(to bottom right, var(--verde), var(--amarelo), var(--rosa));
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+
+#banner > .imagem__banner {
+    text-align: center;
+}
+
+#banner > .imagem__banner > img {
+    width: 70%;
+}
+
+
+#banner > .conteudo__banner {
+    width: 50%;
+}
+
+#banner > .conteudo__banner > h1 {
+    font-size: 4em;
+    text-shadow: 3px 3px 1px #998a4e;
+    
+}
+
+#banner > .conteudo__banner > h1:hover {
+    text-shadow: 3px 3px 1px  #86a536;
+}
+
+#banner > .conteudo__banner > h2 {
+    font: bold 2.2em 'Montserrat';
+    padding: 0.2em 0;
+}
+
+#banner > .conteudo__banner > p {
+    width: 70%;
+    font: normal 1.3em 'Montserrat';
+    padding: 0.2em 0;
+}
+
+#exercicios {
+    padding: 3em;
+}
+
+#exercicios > h1 {
+    color: var(--rosa);
+}
+
+#exercicios > h2 {
+    font-size: 2em;
+    padding: 0.5em 0;
+
+}
+
+#exercicios > .lista__exercicios {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+#exercicios > .lista__exercicios > article {
+    width: 30%;
+}
+
+.icones_exercicios {
+    border-radius: 50%;
+    padding: 0.8em 0;
+}
+
+#exercicios > .lista__exercicios > article > h1, h2 {
+    font-size: 1.3em;
+}
+
+.exercicios__botao {
+    padding: 0.7em 0;
+}
+
+#conceito__flexbox {
+    display: flex;
+    align-items: center;
+    padding: 1em 3em;
+}
+
+#conceito__flexbox > div > .conceito__flexbox__txt > h1 {
+    color: var(--rosa);
+}
+
+#conceito__flexbox > div > .conceito__flexbox__txt > h2 {
+    font-size: 2em;
+    padding: 0.5em 0;
+}
+
+#conceito__flexbox > div > .conceito__flexbox__txt > p {
+    font-size: 1.4em;
+    width: 70%;
+}
+
+#conceito__flexbox > div > .conceito__flexbox__txt> p > cite {
+    font-size: 0.8em;
+    padding: 2em 0;
+}
+
+#conceito__flexbox > div > .conceito__flexbox__txt > button {
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    border-color: var(--amarelo);
+    background-color: var(--amarelo);
+    font-family: 'Hind Madurai', sans-serif;
+    margin: 2em 0;
+}
+
+#conceito__flexbox > div > hr {
+    border-top: 1px dashed lightgray;
+    width: 80%;
+}
+
+#conceito__flexbox > div > .links__uteis {
+    display: flex;
+    padding: 2em 0;
+}
+
+#conceito__flexbox > div > .links__uteis > .lista__links__uteis {
+    width: 30%;
+    padding: 0.5em;
+}
+
+footer {
+    background: var(--amarelo);
+    padding: 2em 0;
+    text-align: center;
+}
+
+
+
+

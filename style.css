@@ -39,6 +39,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
+    flex-wrap: wrap;
 }
 
 header > #logo {
@@ -46,18 +47,33 @@ header > #logo {
     align-items: center;
 }
 
-header > div > h1 {
-    font: bold 2.5em 'WindSong', 'Montserrat';
-    padding-left: 20px;
+@media screen and (max-width: 900px) {
+    header > #logo > img {
+        width: 80px;
     }
+}
 
-header > div > h1:hover {
+header > #logo > h1 {
+    font-size: clamp(30px, 3vw, 2.5em);
+    font-family: 'WindSong', 'Montserrat';
+    padding-left: 20px;   
+}
+
+@media screen and (max-width: 850px) {
+    header > #logo > h1 {
+       display: none;
+    }
+}
+
+
+header > #logo > h1:hover {
     text-shadow: 2px 2px 2px lightgray;
 }
 
 header > #menu > ul > li {
     display: inline;
     padding: 1em;
+    font-size: clamp(15px, 1.1vw, 1.5em );
 }
 
 header > #menu > ul > li:hover {
@@ -87,6 +103,12 @@ a:hover {
     text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+    #banner > .imagem__banner {
+        display: none;
+    }
+}
+
 #banner > .imagem__banner > img {
     width: 70%;
 }
@@ -94,6 +116,12 @@ a:hover {
 
 #banner > .conteudo__banner {
     width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    #banner > .conteudo__banner {
+        width: 100%;
+    }
 }
 
 #banner > .conteudo__banner > h1 {
@@ -129,13 +157,18 @@ a:hover {
     font-size: 2em;
     padding: 0.5em 0;
 
+
 }
 
 #exercicios > .lista__exercicios {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1em 0;
+
 }
+
+
 
 #exercicios > .lista__exercicios > article {
     width: 30%;

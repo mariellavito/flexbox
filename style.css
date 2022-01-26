@@ -70,16 +70,12 @@ header > #logo > h1:hover {
     text-shadow: 2px 2px 2px lightgray;
 }
 
-header > #menu > ul > li {
-    display: inline;
-    padding: 1em;
-    font-size: clamp(15px, 1.1vw, 1.5em );
+@media screen and (max-width:800px){
+    header > #menu > a > img {
+        width: 80%;
+    }    
 }
 
-header > #menu > ul > li:hover {
-      border-bottom: 5px solid var(--rosa);
-
-} 
 
 a {
     text-decoration: none;
@@ -143,6 +139,13 @@ a:hover {
     width: 70%;
     font: normal 1.3em 'Montserrat';
     padding: 0.2em 0;
+}
+
+@media screen and (max-width: 900px){
+    #banner > .conteudo__banner > p {
+        width: 90%;
+    }
+    
 }
 
 #exercicios {
@@ -221,19 +224,37 @@ a:hover {
     margin: 2em 0;
 }
 
-#conceito__flexbox > div > hr {
+hr {
     border-top: 1px dashed lightgray;
-    width: 80%;
 }
 
-#conceito__flexbox > div > .links__uteis {
+#links__uteis {
     display: flex;
     padding: 2em 0;
+    justify-content: space-between;
+
 }
 
-#conceito__flexbox > div > .links__uteis > .lista__links__uteis {
-    width: 30%;
+
+
+#links__uteis > .lista__links__uteis {
     padding: 0.5em;
+    padding: 2em;
+    flex-grow: 1;
+    width: 30%;
+
+}
+
+.rosa {
+    background-color: var(--rosa);
+}
+
+.amarelo {
+    background-color: var(--amarelo);
+}
+
+.verde {
+    background-color: var(--verde);
 }
 
 footer {

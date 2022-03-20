@@ -21,6 +21,7 @@ body {
     font: normal 1em 'Montserrat', sans-serif;
 }
 
+
 h1 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -94,19 +95,26 @@ a:hover {
     padding: 2em;
 }
 
+#banner div:nth-of-type(1) {
+    flex-shrink: 2;
+}
+
 
 #banner > .imagem__banner {
     text-align: center;
+
 }
 
 @media screen and (max-width: 900px) {
     #banner > .imagem__banner {
         display: none;
     }
+
 }
 
 #banner > .imagem__banner > img {
     width: 70%;
+    
 }
 
 
@@ -163,19 +171,19 @@ a:hover {
 
 }
 
-#exercicios > .lista__exercicios {
+#exercicios  .lista__exercicios {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 1em 0;
 
 }
 
-
-
-#exercicios > .lista__exercicios > article {
-    width: 30%;
+#exercicios  .lista__exercicios article {
+    width: 28%;
+    min-width: 250px;
 }
+
 
 .icones_exercicios {
     border-radius: 50%;

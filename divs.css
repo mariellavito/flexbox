@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;500;700&family=Lora:ital,wght@1,400;1,500;1,700&display=swap');
+
+/* 
+font-family: 'Lora', serif; 
+font-family: 'Hind Madurai', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --rosa: #FF7D7D;
+    --verde: #A8CF45;
+    --amarelo: #F4DD7D;
+}
+
+/* header */
+
+header #menu ul li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 2em;
+    text-align: center;
+}
+
+header a {
+    background-image: linear-gradient(to right, var(--rosa) 0%, var(--rosa) 50%, whitesmoke 50%); /*fundo em dua cores */
+    background-size: 200% 100%; /* medida do fundo com o dobro do tamanho do elemento */
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: 0.5s all ease-in-out;
+    overflow: hidden;
+}
+
+header a:hover {
+    background-position: 0% 0%;
+    /*ao passar o mouse, o background é reposicionado */
+    color: white;
+    padding: 1em;
+}
+
+.ajuda__nav {
+    font-size: small;
+    color:var(--rosa);
+}
+
+/* banner principal */
+
+#banner {
+    background-image: linear-gradient(to bottom right, var(--verde), var(--amarelo), var(--rosa));
+    height: 30vh;
+}
+
+#banner h1 {
+    font-size: clamp(30px, 3vw, 2.5em);
+    text-align: center;
+}
+
+
+.destaque {
+    font-weight: bolder;
+}
+
+.destaque:hover {
+    text-decoration: underline wavy var(--rosa);
+}
+
+.enfase {
+    font-weight: bolder;
+}
+.enfase:hover {
+    font-style: italic;
+}
+
+.divs {
+    background-color: gray;
+    border: 5px solid gray;
+    width: auto;
+    height: 200px;
+
+    display: flex;
+    /* transformei as divs que são block (por default sempre em colunas) em linhas */
+
+}
+
+.verde > div{
+    width: 200px;
+    height: 200px;
+}
+
+.verde:hover {
+    flex-direction: column;
+}
+
+.AoEnglish {
+    background-color: #008000;
+    
+}
+
+.YellowGreen {
+    background-color: #38B000;
+}
+
+.SheenGreen {
+    background-color: #70E000;
+}
+
+.GreenLizard {
+    background-color: #9EF01A;
+}
+
+.ElectricLime {
+    background-color: #CCFF33;
+}
+
+.roxo > div {
+    width: 50px;
+    height: 200px;
+    flex-basis: 200px; /* esta relacionado ao eixo principal. Pode ser largura - se display row ou na altura, se display column. Tem mais força do que o width.*/
+    
+}
+
+.rosa > div {
+    width: 50px;
+    height: 200px;
+    flex-basis: 600px; /* esta relacionado ao eixo principal. Pode ser largura - se display row ou na altura, se display column. Tem mais força do que o width.*/
+    
+}
+
+.roxo > div:nth-of-type(3) {
+    flex-grow: 1;/* espaço que um elemento ocupa se houver espaço disponível */
+}
+
+.purple {
+    background-color: #531cb3;
+
+}
+
+.purple__plum {
+    background-color: #944BBB;
+}
+
+.african__violet {
+    background-color: #AA7BC3;
+}
+
+.orchid__crayola {
+    background-color: #CC92C2;
+}
+
+.pastel__pink {
+    background-color: #DBA8AC;
+
+}
+
+
+.divs__rosas > div:nth-of-type(2) {
+    flex-shrink: 2;
+}
+
+.fire__opal {
+    background-color: #EF6351;
+}
+
+.salmon {
+    background-color: #F38375;
+}
+
+.vivid__tangerine {
+    background-color: #F7A399;
+}
+
+.spanish__pink {
+    background-color: #FBC3BC;
+}
+
+.misty__rose {
+    background-color: #FFE3E0;
+}
